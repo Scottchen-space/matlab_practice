@@ -6,5 +6,5 @@ if nargin < 3
     B0 = 3.12E-5;
 end
 
-B = (B0./(L.^3)).*(1+3*sin(theta)).^0.5;
+B = (B0./(L.^3)).*sqrt(1+3*sin(theta).^2);
 end

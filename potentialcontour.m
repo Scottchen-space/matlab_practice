@@ -7,9 +7,9 @@ y = -3:0.1:3;
 
 [xx, yy] = meshgrid(x,y);
 
-V = x.*exp(-xx.^2 + -yy.^2);
+V = xx.*exp(-xx.^2-yy.^2);
 
-surfc(V);
+surfc(xx,yy,V);
 axis tight;
 view(-30,45);
 

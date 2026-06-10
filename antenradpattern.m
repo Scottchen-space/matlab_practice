@@ -12,6 +12,6 @@ R = R + eps;
 
 Z = sin(R)./R;
 
-surf(Z);
+surf(xx,yy,Z);
 colormap("jet");
 colorbar;
